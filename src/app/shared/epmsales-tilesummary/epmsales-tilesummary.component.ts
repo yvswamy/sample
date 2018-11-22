@@ -6,7 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./epmsales-tilesummary.component.css']
 })
 export class EpmsalesTilesummaryComponent implements OnInit {
-  @Input() tilesData: [{}];
+  @Input()
+  tilesData: [{}];
   tilesDataToRender;
 
   constructor() {}
@@ -16,7 +17,6 @@ export class EpmsalesTilesummaryComponent implements OnInit {
   }
 
   prepareTiles(tilesData) {
-    console.log(tilesData);
     const formatter = new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: 'USD',
@@ -88,7 +88,6 @@ export class EpmsalesTilesummaryComponent implements OnInit {
           }
         }
         this.tilesDataToRender[i].comparison = comparisonString;
-        console.log(this.tilesDataToRender[i]);
       }
     }
   }

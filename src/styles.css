@@ -9144,12 +9144,12 @@ span.flatpickr-weekday {
 
 .bx--interior-left-nav {
   font-family: ibm-plex-sans, Helvetica Neue, Arial, sans-serif;
-  width: 15.625rem;
+  width: 100%;
   position: fixed;
-  top: 5.625rem;
+  top: 1.625rem;
   height: 100%;
   background-color: #fff;
-  border-right: 1px solid #dfe3e6
+  /* border-right: 1px solid #dfe3e6 */
 }
 
 .bx--interior-left-nav--v6 {
@@ -9197,7 +9197,7 @@ span.flatpickr-weekday {
 
 .bx--interior-left-nav .left-nav-list__item-link {
   font-size: .875rem;
-  color: #152935;
+  color: white;
   font-weight: 400;
   position: relative;
   display: flex;
@@ -9303,7 +9303,8 @@ span.flatpickr-weekday {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  width: 12.5rem;
+  background-color: #1d364d;
+  /* width: 12.5rem; */
   padding-top: 1.25rem;
   transition: background-color .3s cubic-bezier(.5, 0, .1, 1), width .3s cubic-bezier(.5, 0, .1, 1)
 }
@@ -9374,7 +9375,7 @@ span.flatpickr-weekday {
 .bx--interior-left-nav--collapseable .bx--interior-left-nav-collapse {
   cursor: pointer;
   background-color: rgba(61, 112, 178, .1);
-  display: flex;
+  display: none;
   justify-content: flex-end;
   align-items: center;
   margin-top: auto;
@@ -9398,7 +9399,7 @@ span.flatpickr-weekday {
 
 .bx--interior-left-nav--collapseable .bx--interior-left-nav-collapse__link {
   font-size: .875rem;
-  display: flex;
+  display: none;
   align-items: center;
   text-decoration: none;
   padding: .25rem

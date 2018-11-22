@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CarbonSnippetModule } from '@cccc/angular-carbon-components';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'epm-sales';
+
+  appNavigation(navItem: string) {
+    console.log(navItem);
+  }
 }

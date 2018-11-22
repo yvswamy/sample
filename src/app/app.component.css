@@ -1,7 +1,15 @@
+.ibm-title-text {
+  font-weight: normal;
+  font-size: 20px;
+  vertical-align: middle;
+  display: table-cell;
+  color: white;
+}
+
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1.6fr 8.4fr;
+  grid-template-columns: 1.5fr 8.5fr;
   grid-template-rows: 40px 1fr;
 }
 
@@ -20,8 +28,36 @@ header {
   background-color: #1D364D;
   color: white;
   grid-template-rows: 5fr 5fr;
+  padding: 10px 10px;
 }
 
 header div:nth-child(2) {
   margin-left: auto;
+}
+
+.ibm-title-text {
+  font-weight: normal;
+  font-size: 10px;
+  vertical-align: middle;
+  display: table-cell;
+  color: white;
+}
+
+.ibm-title {
+  font-size: 23px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  aside {
+    display: none;
+  }
+
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1.6fr 8.4fr;
+    grid-template-rows: 1fr;
+  }
+
 }

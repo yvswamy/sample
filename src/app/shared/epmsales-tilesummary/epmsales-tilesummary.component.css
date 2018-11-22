@@ -1,7 +1,7 @@
 .flex-container {
   background-color: #ffffff;
   margin: 0px 4px;
-  height: 80px;
+  height: 98%;
   display: flex;
   align-items: stretch;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);

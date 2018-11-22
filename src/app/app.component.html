@@ -1,12 +1,33 @@
 <div class="container">
+
   <header>
-    <div>HOME SALES <br> DASHBOARD</div>
     <div>
-      <span>Veeraswamy </span><span>Image</span>
+      <!-- <img class="logoIcon LogoImg" src="assets/images/spriteImage.png"> -->
+      <div class="ibm-title">SMS |</div>
+      <div class="ibm-title-text">I B M S A L E S <br /> D A S H B O A R D </div>
+    </div>
+    <div>
+      <span>Welcome, Veeraswamy </span><span>Image</span>
     </div>
   </header>
-  <aside>MENU</aside>
+  <aside>
+    <div>
+      <carbon-interior-nav>
+        <carbon-interior-nav-item label="Executive Summary" (click)="appNavigation('execsummary')"></carbon-interior-nav-item>
+        <carbon-interior-nav-item label="Aggregated Pipeline" (click)="appNavigation('aggpipeline')"></carbon-interior-nav-item>
+        <carbon-interior-nav-item label="Segmented Pipeline" (click)="appNavigation('segpipeline')"></carbon-interior-nav-item>
+        <carbon-interior-nav-item label="Transactional Pipeline" style="pointer-events: none"></carbon-interior-nav-item>
+        <div style="padding-left: 15px;">
+          <carbon-interior-nav-item label="ROADMAP" (click)="appNavigation('transroadmap')"></carbon-interior-nav-item>
+          <carbon-interior-nav-item label="KEY DEALS" (click)="appNavigation('transkeydeals')"></carbon-interior-nav-item>
+        </div>
+      </carbon-interior-nav>
+    </div>
+  </aside>
   <main>
     <app-epmsales-execsummary></app-epmsales-execsummary>
   </main>
 </div>
+
+
+<!-- <app-epmsales-profilepage></app-epmsales-profilepage> -->

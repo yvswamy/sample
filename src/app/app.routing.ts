@@ -9,7 +9,10 @@ import {
   CarbonIconModule,
   CarbonModalModule,
   CarbonOverflowModule,
-  CarbonCardModule
+  CarbonCardModule,
+  CarbonInteriorNavModule
+
+
 
   // CarbonBreadcrumbComponent,1
   // CarbonBreadcrumbItemComponent
@@ -26,7 +29,8 @@ export const carbonComponents = [
   CarbonIconModule,
   CarbonModalModule,
   CarbonOverflowModule,
-  CarbonCardModule
+  CarbonCardModule,
+  CarbonInteriorNavModule
   // CarbonBreadcrumbComponent,
   // CarbonBreadcrumbItemComponent,
 ];
