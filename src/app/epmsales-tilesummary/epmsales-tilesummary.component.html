@@ -1,0 +1,9 @@
+<div class="flex-container">
+  <div *ngFor="let tileData of tilesDataToRender;" [ngClass]="{'showPointer':tileData.showPointer}">
+    <!-- (click)="onTilesClick(tileData.label)"> -->
+    <p class="tile-label">{{tileData.label}}</p>
+    <p class="message">{{tileData.title}}</p>
+    <p class="value" [ngClass]="{'warningColor': tileData.changeColor}">{{tileData.value}}</p>
+    <p class="comparison">{{tileData.comparison}}</p>
+  </div>
+</div>

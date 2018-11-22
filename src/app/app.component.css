@@ -1,0 +1,28 @@
+.container {
+  height: 100vh;
+  display: grid;
+  /* grid-template-columns: 180px auto; */
+  grid-template-columns: 1.6fr 8.4fr;
+  grid-template-rows: 40px 1fr;
+}
+
+main {
+  grid-column: 2/-1;
+}
+
+aside {
+  background-color: #1D364D;
+  color: white;
+}
+
+header {
+  display: flex;
+  grid-column: 1/-1;
+  background-color: #1D364D;
+  color: white;
+  grid-template-rows: 5fr 5fr;
+}
+
+header div:nth-child(2) {
+  margin-left: auto;
+}
