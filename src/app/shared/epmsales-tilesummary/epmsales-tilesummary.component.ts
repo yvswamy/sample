@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./epmsales-tilesummary.component.css']
 })
 export class EpmsalesTilesummaryComponent implements OnInit {
-  @Input() tilesData;
+  @Input() tilesData: [{}];
   tilesDataToRender;
 
   constructor() {}
@@ -15,11 +15,6 @@ export class EpmsalesTilesummaryComponent implements OnInit {
     this.prepareTiles(this.tilesData);
   }
 
-  // set tilesData(tilesData) {
-  //   if (tilesData.length !== 0) {
-  //     this.prepareTiles(tilesData);
-  //   }
-  // }
   prepareTiles(tilesData) {
     console.log(tilesData);
     const formatter = new Intl.NumberFormat('en-US', {
@@ -35,9 +30,7 @@ export class EpmsalesTilesummaryComponent implements OnInit {
       const value = tilesData[i]['value'];
       if (
         tilesData[i]['label'] === 'COV%' ||
-        tilesData[i]['label'] === 'PPV Penetration of Total PPV %' ||
-        tilesData[i]['label'] === 'VP Penetration of Total VP %' ||
-        tilesData[i]['label'] === 'WON Penetration of Total WON %'
+        tilesData[i]['label'].length > 12
       ) {
         this.tilesDataToRender[i]['value'] = formatter.format(value);
         if (this.tilesDataToRender[i]['value'] !== 'N/A') {
@@ -88,9 +81,7 @@ export class EpmsalesTilesummaryComponent implements OnInit {
               (tilesData[i].comparison[comparisonTo[j]] >= 0 ? '+$' : '-$') +
               Math.abs(tilesData[i].comparison[comparisonTo[j]]);
             comparisonString +=
-              comparisonTo[j].indexOf('M') === 0
-                ? data
-                : formatter.format(comparisonTo[j]);
+              comparisonTo[j].indexOf('M') === 0 ? data : comparisonTo[j];
           }
           if (j !== comparisonTo.length - 1) {
             comparisonString += ', ';
