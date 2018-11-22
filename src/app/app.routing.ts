@@ -1,21 +1,4 @@
-import { CarbonButtonModule,
-  CarbonDropdownModule,
-  CarbonCopyButtonModule,
-  CarbonCheckboxModule,
-  CarbonAccordionModule,
-  CarbonPaginationModule,
-  CarbonBasicNotificationModule,
-  CarbonIconModule,
-  CarbonModalModule,
-  CarbonOverflowModule,
-  CarbonCardModule,
-
-  // CarbonBreadcrumbComponent,1
-  // CarbonBreadcrumbItemComponent
-
-} from '@cccc/angular-carbon-components';
-
-export const carbonCoponents = [
+import {
   CarbonButtonModule,
   CarbonDropdownModule,
   CarbonCopyButtonModule,
@@ -26,8 +9,24 @@ export const carbonCoponents = [
   CarbonIconModule,
   CarbonModalModule,
   CarbonOverflowModule,
-  CarbonCardModule,
+  CarbonCardModule
+
+  // CarbonBreadcrumbComponent,1
+  // CarbonBreadcrumbItemComponent
+} from '@cccc/angular-carbon-components';
+
+export const carbonComponents = [
+  CarbonButtonModule,
+  CarbonDropdownModule,
+  CarbonCopyButtonModule,
+  CarbonCheckboxModule,
+  CarbonAccordionModule,
+  CarbonPaginationModule,
+  CarbonBasicNotificationModule,
+  CarbonIconModule,
+  CarbonModalModule,
+  CarbonOverflowModule,
+  CarbonCardModule
   // CarbonBreadcrumbComponent,
   // CarbonBreadcrumbItemComponent,
-
 ];

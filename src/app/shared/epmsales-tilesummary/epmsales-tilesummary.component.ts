@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-epmsales-tilesummary',
@@ -6,83 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./epmsales-tilesummary.component.css']
 })
 export class EpmsalesTilesummaryComponent implements OnInit {
+  @Input() tilesData;
   tilesDataToRender;
 
   constructor() {}
 
   ngOnInit() {
-    this.tilesData = [
-      {
-        label: 'BUDGET',
-        comparison: {
-          '% yty': -4
-        },
-        value: 4670
-      },
-      {
-        label: 'PPV',
-        comparison: {
-          '% yty': -6
-        },
-        value: 4596
-      },
-      {
-        label: 'COV%',
-        comparison: {
-          ' pts wtw': '+1'
-        },
-        value: 98
-      },
-      {
-        label: 'B/(W) OBJ',
-        value: -75
-      },
-      {
-        label: 'VP',
-        comparison: {
-          '% yty': -1,
-          'M wtw': -291
-        },
-        value: 11246
-      },
-      {
-        label: 'QP',
-        comparison: {
-          '% yty': -7,
-          'M wtw': '+216'
-        },
-        value: 5733
-      },
-      {
-        label: 'WSR',
-        title: {
-          'Data as of': 'November 19, 2018 ,10:11 PM UTC'
-        },
-        comparison: {
-          'M Won RM': 771,
-          'M Sol + Risk': 3469
-        },
-        value: 4239
-      },
-      {
-        label: 'WON',
-        title: {
-          Pipeline: ''
-        },
-        comparison: {
-          '% yty': -13,
-          'M wtw': '+66'
-        },
-        value: 605
-      }
-    ];
+    this.prepareTiles(this.tilesData);
   }
 
-  set tilesData(tilesData) {
-    if (tilesData.length !== 0) {
-      this.prepareTiles(tilesData);
-    }
-  }
+  // set tilesData(tilesData) {
+  //   if (tilesData.length !== 0) {
+  //     this.prepareTiles(tilesData);
+  //   }
+  // }
   prepareTiles(tilesData) {
     console.log(tilesData);
     const formatter = new Intl.NumberFormat('en-US', {
@@ -160,6 +97,7 @@ export class EpmsalesTilesummaryComponent implements OnInit {
           }
         }
         this.tilesDataToRender[i].comparison = comparisonString;
+        console.log(this.tilesDataToRender[i]);
       }
     }
   }
