@@ -12,29 +12,23 @@ import { EpmsalesSegpipelineComponent } from './epmsales-segpipeline/epmsales-se
 import { EpmsalesTransroadmapComponent } from './epmsales-transroadmap/epmsales-transroadmap.component';
 import { EpmsalesTranskeydealsComponent } from './epmsales-transkeydeals/epmsales-transkeydeals.component';
 import { EpmsalesProfilepageComponent } from './epmsales-profilepage/epmsales-profilepage.component';
-import { EpmsalesBreadcrumbComponent } from './epmsales-breadcrumb/epmsales-breadcrumb.component';
+import { EpmsalesBreadcrumbComponent } from './shared/epmsales-breadcrumb/epmsales-breadcrumb.component';
 
 @NgModule({
-   declarations: [
-      AppComponent,
-      EpmsalesExecsummaryComponent,
-      EpmsalesTilesummaryComponent,
-      EpmsalesChartboardComponent,
-      EpmsalesAggpipelineComponent,
-      EpmsalesSegpipelineComponent,
-      EpmsalesTransroadmapComponent,
-      EpmsalesTranskeydealsComponent,
-      EpmsalesProfilepageComponent,
-      EpmsalesBreadcrumbComponent
-   ],
-   imports: [
-      ...carbonComponents,
-      FormsModule,
-      BrowserModule
-   ],
-   providers: [],
-   bootstrap: [
-      AppComponent
-   ]
+  declarations: [
+    AppComponent,
+    EpmsalesExecsummaryComponent,
+    EpmsalesTilesummaryComponent,
+    EpmsalesChartboardComponent,
+    EpmsalesAggpipelineComponent,
+    EpmsalesSegpipelineComponent,
+    EpmsalesTransroadmapComponent,
+    EpmsalesTranskeydealsComponent,
+    EpmsalesProfilepageComponent,
+    EpmsalesBreadcrumbComponent
+  ],
+  imports: [...carbonComponents, FormsModule, BrowserModule],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

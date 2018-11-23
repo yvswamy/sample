@@ -1,7 +1,0 @@
-.flex-container {
-  background-color: #1b2834;
-  margin: 0;
-  height: 90%;
-  display: grid;
-  grid-template-rows: 6fr 4fr;
-}

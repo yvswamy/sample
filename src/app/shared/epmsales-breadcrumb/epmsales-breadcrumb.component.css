@@ -1,0 +1,21 @@
+.flex-container {
+  background-color: #ffffff;
+  margin: 5px 4px;
+  height: 65%;
+  width: 20%;
+
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flex-container>div {
+  background-color: white;
+  border: solid 1px #dfe3e6;
+  text-align: center;
+  vertical-align: center;
+  justify-content: center;
+  padding: 8px 8px;
+  line-height: 80px;
+  flex: 1;
+}
