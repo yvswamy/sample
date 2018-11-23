@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./epmsales-breadcrumb.component.css']
 })
 export class EpmsalesBreadcrumbComponent implements OnInit {
+  cities = ['a', 'b', 'c', 'd', 'e'];
+  selectedCity = 'CQ';
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

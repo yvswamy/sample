@@ -47,6 +47,34 @@ header div:nth-child(2) {
   font-size: 23px;
 }
 
+.spriteImage img {
+  object-fit: none;
+  object-position: 0 0;
+  width: 28px;
+  height: 28px;
+}
+
+.suitcase img {
+  object-position: -3px -95px;
+}
+
+.AggPipeIcon img {
+  object-position: -49px -58px;
+}
+
+.transtionIcon img {
+  object-position: -96px -8px;
+  ;
+}
+
+.transtionIconq img {
+  object-position: -54px -8px;
+}
+
+.logoIcon .Logoimg {
+  object-position: -10px -57px;
+}
+
 
 @media only screen and (max-width: 800px) {
   aside {
