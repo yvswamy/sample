@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./epmsales-profilepage.component.css']
 })
 export class EpmsalesProfilepageComponent implements OnInit {
-
+  cities = ['Hyderabad', 'Bombay', 'Chennai', 'Delhi'];
+  selectedCity = 'Hyderabad';
   constructor() { }
 
   ngOnInit() {

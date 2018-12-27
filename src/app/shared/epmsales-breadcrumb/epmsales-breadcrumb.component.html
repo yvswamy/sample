@@ -1,61 +1,62 @@
 <div>
-  <div class="flex-container">
-    <div>
-      <div class="dropdown-header">
-        <div>QUARTER: </div>
+    <div class="flex-container">
         <div>
-          <carbon-dropdown class="dropdown-style" #selectedCityRef="ngModel" [autofocus]="false" [open]="false" [items]="cities"
-            [(ngModel)]="selectedCity" placeholder="Placeholder" bindLabel="name" bindValue="name">
-          </carbon-dropdown>
+            <div class="dropdown-header">
+                <div>QUARTER </div>
+                <div>
+                    <carbon-dropdown class="dropdown-style" #selectedCityRef="ngModel" [autofocus]="false" [open]="false" [items]="cities" [(ngModel)]="selectedCity" placeholder="Placeholder" bindLabel="name" bindValue="name">
+                    </carbon-dropdown>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div>
-      <div class="dropdown-header">
-        <div>QUARTER: </div>
         <div>
-          <carbon-dropdown class="dropdown-style" #selectedCityRef2="ngModel" [autofocus]="false" [open]="false"
-            [items]="cities" [(ngModel)]="selectedCity" placeholder="Placeholder" bindLabel="name" bindValue="name"
-            required pattern=".*">
-          </carbon-dropdown>
+            <div class="dropdown-header">
+                <div>DEAL SIZE </div>
+                <div>
+                    <carbon-dropdown class="dropdown-style" #selectedCityRef2="ngModel" [autofocus]="false" [open]="false" [items]="cities" [(ngModel)]="selectedCity" placeholder="Placeholder" bindLabel="name" bindValue="name" required pattern=".*">
+                    </carbon-dropdown>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+        <div>
+            <div class="dropdown-header">
+                <div>FORECAST PERSPECTIVE </div>
+                <div>
+                    <carbon-dropdown class="dropdown-style" #selectedCityRef3="ngModel" [autofocus]="false" [open]="false" [items]="cities" [(ngModel)]="selectedCity" placeholder="Placeholder" bindLabel="name" bindValue="name" required pattern=".*">
+                    </carbon-dropdown>
+                </div>
+            </div>
+        </div>
 
-    <div>
-      <div class="dropdown-header">
-        <div>QUARTER: </div>
         <div>
-          <carbon-dropdown class="dropdown-style" #selectedCityRef3="ngModel" [autofocus]="false" [open]="false"
-            [items]="cities" [(ngModel)]="selectedCity" placeholder="Placeholder" bindLabel="name" bindValue="name"
-            required pattern=".*">
-          </carbon-dropdown>
+            <div class="dropdown-header">
+                <div>VIEW: </div>
+                <div>
+                    <carbon-dropdown class="dropdown-style" #selectedCityRef3="ngModel" [autofocus]="false" [open]="false" [items]="cities" [(ngModel)]="selectedCity" placeholder="Placeholder" bindLabel="name" bindValue="name" required pattern=".*">
+                    </carbon-dropdown>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+        <div>
+            <div class="dropdown-header">
+                <div>GEO </div>
+                <div>
+                    <carbon-dropdown class="dropdown-style" #selectedCityRef3="ngModel" [autofocus]="false" [open]="false" [items]="cities" [(ngModel)]="selectedCity" placeholder="Geo" bindLabel="name" bindValue="name" required pattern=".*">
+                    </carbon-dropdown>
+                </div>
+            </div>
+        </div>
 
-    <div>
-      <div>
-        <carbon-dropdown class="dropdown-style" #selectedCityRef="ngModel" [autofocus]="false" [open]="false" [items]="cities"
-          [(ngModel)]="selectedCity" placeholder="Placeholder" bindLabel="name" bindValue="name" required pattern=".*">
-        </carbon-dropdown>
-      </div>
+        <div>
+            <div class="dropdown-header">
+                <div>BU SUBGROUP </div>
+                <div>
+                    <carbon-dropdown class="dropdown-style" #selectedCityRef3="ngModel" [autofocus]="false" [open]="false" [items]="cities" [(ngModel)]="selectedCity" placeholder="Placeholder" bindLabel="name" bindValue="name" required pattern=".*">
+                    </carbon-dropdown>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-      <div>
-        <carbon-dropdown class="dropdown-style" #selectedCityRef="ngModel" [autofocus]="false" [open]="false" [items]="cities"
-          [(ngModel)]="selectedCity" placeholder="Placeholder" bindLabel="name" bindValue="name" required pattern=".*">
-        </carbon-dropdown>
-      </div>
-    </div>
-    <div>
-      <div>
-        <carbon-dropdown class="dropdown-style" #selectedCityRef="ngModel" [autofocus]="false" [open]="false" [items]="cities"
-          [(ngModel)]="selectedCity" placeholder="Placeholder" bindLabel="name" bindValue="name" required pattern=".*">
-        </carbon-dropdown>
-      </div>
-    </div>
-  </div>
-  <div style="background-color:white;">
-    > veera> swamy> yarrasmetty </div>
+    <div style="background-color:white;">
+        > veera > swamy > yarrasmetty </div>
 </div>

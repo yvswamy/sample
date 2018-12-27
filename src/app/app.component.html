@@ -7,25 +7,26 @@
       <div class="ibm-title-text">I B M S A L E S <br /> D A S H B O A R D </div>
     </div>
     <div>
-      <span>Welcome, Veeraswamy </span><span>Image</span>
+      <span>Welcome, Veeraswamy </span><span id='profileImage' (click)="appNavigation('/profile')">Image</span>
     </div>
   </header>
   <aside>
     <div>
       <carbon-interior-nav>
-        <carbon-interior-nav-item label="Executive Summary" (click)="appNavigation('execsummary')"></carbon-interior-nav-item>
-        <carbon-interior-nav-item label="Aggregated Pipeline" (click)="appNavigation('aggpipeline')"></carbon-interior-nav-item>
-        <carbon-interior-nav-item label="Segmented Pipeline" (click)="appNavigation('segpipeline')"></carbon-interior-nav-item>
+        <carbon-interior-nav-item label="Executive Summary" (click)="appNavigation('executive-summary')"></carbon-interior-nav-item>
+        <carbon-interior-nav-item label="Aggregated Pipeline" (click)="appNavigation('aggregated-pipeline')"></carbon-interior-nav-item>
+        <carbon-interior-nav-item label="Segmented Pipeline" (click)="appNavigation('segmented-pipeline')"></carbon-interior-nav-item>
         <carbon-interior-nav-item label="Transactional Pipeline" style="pointer-events: none"></carbon-interior-nav-item>
         <div style="padding-left: 15px;">
-          <carbon-interior-nav-item label="ROADMAP" (click)="appNavigation('transroadmap')"></carbon-interior-nav-item>
-          <carbon-interior-nav-item label="KEY DEALS" (click)="appNavigation('transkeydeals')"></carbon-interior-nav-item>
+          <carbon-interior-nav-item label="ROADMAP" (click)="appNavigation('transactional-pipeline')"></carbon-interior-nav-item>
+          <carbon-interior-nav-item label="KEY DEALS" (click)="appNavigation('transactional-keydeals')"></carbon-interior-nav-item>
         </div>
       </carbon-interior-nav>
     </div>
   </aside>
   <main>
-    <app-epmsales-execsummary></app-epmsales-execsummary>
+    <!-- <app-epmsales-execsummary></app-epmsales-execsummary> -->
+    <router-outlet></router-outlet>
   </main>
 </div>
 

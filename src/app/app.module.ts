@@ -2,8 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 
-import { carbonComponents } from './app.routing';
+import { carbonComponents  } from './app.routing';
+import { AuthGuardService } from './auth-guard.service';
 import { EpmsalesExecsummaryComponent } from './epmsales-execsummary/epmsales-execsummary.component';
 import { EpmsalesTilesummaryComponent } from './shared/epmsales-tilesummary/epmsales-tilesummary.component';
 import { EpmsalesChartboardComponent } from './shared/epmsales-chartboard/epmsales-chartboard.component';
@@ -27,8 +29,8 @@ import { EpmsalesBreadcrumbComponent } from './shared/epmsales-breadcrumb/epmsal
     EpmsalesProfilepageComponent,
     EpmsalesBreadcrumbComponent
   ],
-  imports: [...carbonComponents, FormsModule, BrowserModule],
-  providers: [],
+  imports: [...carbonComponents,  AppRoutingModule, FormsModule, BrowserModule],
+  providers: [AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

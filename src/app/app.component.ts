@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CarbonSnippetModule } from '@cccc/angular-carbon-components';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +8,10 @@ import { CarbonSnippetModule } from '@cccc/angular-carbon-components';
 })
 export class AppComponent {
   title = 'epm-sales';
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   appNavigation(navItem: string) {
     console.log(navItem);
+    this.router.navigate([`/${navItem}`]);
   }
 }

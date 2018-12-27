@@ -1,5 +1,9 @@
 #grid {
   display: grid;
   height: 100%;
-  grid-template-rows: 0.9fr 1.1fr 8fr;
+  grid-template-rows: 1fr 1fr 10fr;
+}
+
+.gridA {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

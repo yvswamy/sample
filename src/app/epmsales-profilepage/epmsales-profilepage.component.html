@@ -1,11 +1,9 @@
-
 <div>
-  <carbon-interior-nav>
-    <carbon-interior-nav-item label="Menu 1"></carbon-interior-nav-item>
-    <carbon-interior-nav-item label="Menu 2"></carbon-interior-nav-item>
-    <carbon-interior-nav-item label="menu 3"></carbon-interior-nav-item>
-  </carbon-interior-nav>
-</div>
-<div style="background-color:red">
-  Veeraswamy
+    <div class="dropdown-header">
+        <div>GEO </div>
+        <div>
+            <carbon-dropdown class="dropdown-style" #selectedCityRef3="ngModel" [autofocus]="false" [open]="false" [items]="cities" [(ngModel)]="selectedCity" placeholder="Geo" bindLabel="name" bindValue="name" required pattern=".*">
+            </carbon-dropdown>
+        </div>
+    </div>
 </div>
